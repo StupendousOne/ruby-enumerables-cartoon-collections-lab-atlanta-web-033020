@@ -1,7 +1,10 @@
 def roll_call_dwarves(dwarves)# code an argument here
   # Your code here
   list_num = 1
-  dwarves.each {|dwarf| puts "#{dwarf}"}
+  dwarves.each do |dwarf| 
+    puts "#{list_num}.*#{dwarf}"
+    list_num += 1
+  end
 end
 
 def summon_captain_planet(elements)# code an argument here
