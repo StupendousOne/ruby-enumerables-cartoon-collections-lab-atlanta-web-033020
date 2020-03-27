@@ -16,8 +16,8 @@ def long_planeteer_calls(calls)# code an argument here
   # Your code here
   call_to_long = false
   calls.reduce do |call_to_long, call|
-    puts call.length > 4
     call_to_long = true if call.length > 4
+    return call_to_long if call_to_long == true
   end
   call_to_long
 end
