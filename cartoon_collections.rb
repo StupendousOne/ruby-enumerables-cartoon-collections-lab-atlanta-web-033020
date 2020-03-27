@@ -10,11 +10,15 @@ end
 
 def long_planeteer_calls(calls)# code an argument here
   # Your code here
-  calls.
+  call_to_long = nil
+  calls.reduce do |call_to_long, call|
+    call_to_long = true if call.length > 4
+  end
+  call_to_long
 end
 
-def find_the_cheese(cheeses)# code an argument here
+def find_the_cheese(array)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  
+  array.include
 end
